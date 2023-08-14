@@ -1,46 +1,47 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](https://banners.beyondco.de/nextjs-semantic.png?theme=light&packageManager=&packageName=&pattern=charlieBrown&style=style_1&description=Next.js+%2B+Fomantic-UI+%2B+Styled+Components&md=1&showWatermark=0&fontSize=100px&images=sparkles&widths=auto)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Notice
+Since version 2.0.0 (of this package), Semantic UI was replaced by Fomantic-UI.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Current Versions
+* Next.js 12
+* React 17
+* Fomantic-UI 2.8
+* Styled Components 5.3
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Setup
+1. clone repo
+2. `npm install`
+3. `npm run semantic:build`
+4. `npm run dev`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Semantic UI React
+* Installed and used by default.
+* Using React components is recommended.
+* Read docs: https://react.semantic-ui.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Semantic UI
+* you can remove components to reduce css size on `semantic.json`
+* `.semantic` folder includes source file, from here it's possible to customize default theme
+* change default Google font (Lato) on `.semantic/src/themes/default/globals/site.variables`
+* run `npm run semantic:watch` to watch for changes while customizing theme
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Why switching to Fomantic-UI?
+Here are some reasons for the change:
+* Semantic UI requires Node 10
+* Fomantic-UI is actively developed
+* Adds more components
+* Fixes several security vulnerabilities
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you still want to use Semantic UI, get release [1.1.0](https://github.com/skydiver/nextjs-semantic/releases/tag/1.1.0)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deploy with Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fskydiver%2Fnextjs-semantic%2F&project-name=nextjs-semantic-demo)
